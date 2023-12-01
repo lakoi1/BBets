@@ -1,6 +1,6 @@
 ---
 title: "Brownlows Bets"
-author: "Your Name Goes Here"
+author: "lana"
 output: 
   html_document:
     number_sections: true
@@ -36,6 +36,15 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 
 The function will be given a class_size by number of students, odds, and Number_of_times brownlow made the bet.  It will give you back how much Brownlows earnings were. We will use it to answer our three questions below. If you can, improve this function by giving default values to some of its inputs. 
 
+## Fair Odds 
+
+```{r}
+money=BrLw(35,4.4,637)
+print(money)
+```
+
+fair offs are 4.4 for the odds
+
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
 ## the standard deviation and a 95% confidence interval for their earnings?
@@ -48,7 +57,12 @@ The function will be given a class_size by number of students, odds, and Number_
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
+## Fair Odds
 
+```{r}
+money=BrLw(35,4.4,637)
+print(money)
+```
 
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
@@ -57,12 +71,24 @@ The function will be given a class_size by number of students, odds, and Number_
 
 
 
+```{r}
+money=BrLw(28,2,637)
+print(money)
+```
 
+the number of students to make the payout fair is 28
 
+## Brownlows Bank
 
+```{r}
+money=BrLw(35,2,637)
+print(money)
+```
 
+overall Mr Brownlow will consume and make to 307 in total 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+in concluction Mr. Brownlow has to change the number of students and the odds of his payout against the dollar. 
